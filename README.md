@@ -5,7 +5,7 @@ Recommender System
 
 WTF do I have to do???
 
-TASK 
+1. TASK 
 	What do I have to build?
 		- You are to develop a context-aware music or travel recommender system application.
 		- implementation of a recommender system technique.
