@@ -1,0 +1,8 @@
+Flask==1.1.1
+fastai==1.0.57
+pandas==1.0.1
+numpy==1.18.1
+opencv_python==4.0.0.21
+imutils==0.5.3
+scikit_learn==0.22.2.post1
+vaderSentiment==3.2.1

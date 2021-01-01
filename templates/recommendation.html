@@ -1,0 +1,27 @@
+{% for objs in trackObjs %}
+    <article class="media content-section">
+      <div class="media-body">
+        {% for key, value in objs.items()%}
+            {%if key == "trackId" %}   
+                 <h3><a class="article-title" >SongID:{{ value }}</a></h3>
+            {%else%}
+                <p class="article-content ISBN">Song features:</p>
+                <ul>
+                    {%for feature in value%}
+                        {%if loop.index0 == 0 %}
+                            <li>Liveness:{{feature}}{{'%'}} </li>
+                        {%endif%}
+                        {%if loop.index0 == 1 %}
+                            <li>Danceability:{{feature}}{{'%'}} </li>
+                        {%endif%}
+                        {%if loop.index0 == 2 %}
+                            <li>Tempo:{{feature}} </li>
+                        {%endif%}
+                    {%endfor%}
+                </ul>
+            {%endif%}
+        {% endfor %}
+
+      </div>
+    </article>
+{% endfor %}
